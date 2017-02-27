@@ -1,0 +1,45 @@
+﻿Some useful command:
+(1)Check the current dictionary: "pwd"
+(2)Change the dictionary: "cd Coding" (remember the current dictionary is "c/Users/Xinlu Xiao", and you can go back to this dictionary by using "cd")
+(3)Step to add new file in to the repository(example: Coding)
+   (i)If you want to create a new repository
+        $ mkdir learngit
+	$ cd learngit
+	$ pwd
+   (ii)Initialize the repository
+        $ git init
+   (iii)Put your file under the dictionary
+   (iv)Add the file to the repository
+        $ git add readme.txt
+   (v)Commit the file to the repository
+	$ git commit -m "wrote a readme file"
+   (vi)Create a new repository in the github.com
+   (vii)要建立一个远程库，使用命令 
+        $ git remote add origin git@github.com:XinluXiao/Coding.git
+   (viii)关联后，使用命令
+   	$ git push -u origin master (after the first time: git push origin master)
+   (ix)How to clone the repository?
+	$ git clone git@github.com:michaelliao/gitskills.git
+(4)Step to delete file in the repository(example: Coding)
+   (i)git rm new.txt
+   (ii)git commit -m"delete the no need file"
+   (iii)git push origin master
+(5)Before push need to check whether need "git pull"
+(6)Step to add new folder and delete new folder under the repository:
+   (i)add new folder: git add IQSeminar(then have to commit and push)
+   (ii)delete new folder: git rm -r IQSeminar(then have to commit and push)
+(7)Go back to the old dict: cd ../
+(8)Create a new branch: git branch <name>
+(9)Go to the different branch: git checkout <branch name>
+                               git branch -a     #then you go to the branch you want to work on
+(10)See the change of the branch: git log
+(11)Merge the branch: git merge <branch name>
+(12)Delete the branch: git branch -d <name>
+(13)Check out the master now: git branch
+(14)Rename the folder: git mv Cpp C++ (Cpp is the old name, C++ is the new name)
+(15)Rename the file: git mv CppReadMe.txt C++ReadMe.txt (CppReadMe.txt is the old name, C++ReadMe.txt is the new name)
+(16)Delete the wrong commit(at this time you can not push files): git reset --hard <commit id>
+                                                                  git push origin HEAD --force
+(17)How to check the commit id: git log
+                                or use github
+				
