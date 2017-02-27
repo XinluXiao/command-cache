@@ -1,2 +1,6 @@
 # command-cache
-Some Useful Command
+Git
+
+Jupyter
+
+Linux
